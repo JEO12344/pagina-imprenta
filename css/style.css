@@ -22,8 +22,7 @@
 }
 
 .dropdown-menu {
-    position: relative;
-    z-index: 3;
+    position: initial !important; 
 }
 /*Header_presentación */
 .presentación {
@@ -91,10 +90,10 @@ footer {
     background-color: #2596be;
 }
 
-footer h2 {
-    color: #ffffff;
+.nombre {
+        color: #ffffff;
+        margin-top: -138px; 
 }
-
 .pie {
     display: flex;
     align-items: center;
@@ -115,7 +114,7 @@ footer h2 {
     }
 
     .productos {
-        width: 100%;
+        width: 54%;
     }
 }
 
@@ -165,4 +164,74 @@ footer h2 {
         align-items: center;
         text-align: center;
     }
+}
+
+/* contactos */
+.contenedor {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    }
+.datos {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.consulta h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.consulta form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.consulta .form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.atención {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
