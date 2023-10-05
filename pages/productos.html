@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
-    <header class="cabecera">
+    <header class="cabecera"> <!-- Inicio del menu desplegable -->
         <img src="../img/cabecera.jpg" class="logo" alt="logo">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -50,29 +51,43 @@
         </nav>
         </ul>
         </nav>
-    </header>
-    <div class="grid-padre">
-        <div class="producto-1">
-            <img src="../img/carteles.jpg" alt="carteles">
-            <h2>Carteles</h2>
+    </header> <!-- fin del menu desplegable -->
+    <main>
+        <div>
+            <div class="principal">
+                <h1>Servicios</h1>
+            </div>
+            <div class="grid-servicios">
+                <div class="servicios">
+                    <div class="imagen-grid">
+                        <a href="./contactos.html"> <img src="../img/diseño.jpg" alt="diseño Gráfico"> </a>
+                    </div>
+                    <h2>Diseño Gráfico</h2>
+                    <p>Contamos con un equipo de diseñadores gráficos para generar o mejorar sus piezas actuales. Generá
+                        un mejor impacto visual, optimizando la llegada de información de sus clientes y aumentando el
+                        retorno de su inversión en comunicación.
+                    </p>
+                </div>
+                <div class="servicios">
+                    <div class="imagen-grid">
+                        <a href="./contactos.html"> <img src="../img/notebook.jpg" alt="Archivos"> </a>
+                    </div>
+                    <h2>Envie su Archivo</h2>
+                    <p>Envie su archivo junto a las especificaciones para tener una cotización del trabajo</p>
+                </div>
+                <div class="servicios">
+                    <div class="imagen-grid">
+                        <a href="./envios.html"> <img src="../img/envios.jpg" alt="Envios"> </a>
+                    </div>
+                    <a href="./envios.html"></a>
+                    <h2>Envios</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sed ad, perferendis reiciendis
+                        obcaecati doloremque iure! Odit.</p>
+                </div>
+            </div>
         </div>
-        <div class="producto-2">
-            <img src="../img/letras.jpg" alt="letras">
-            <h2>Letras</h2>
         </div>
-        <div class="producto-3">
-            <img src="../img/estampas.jpg" alt="estampas">
-            <h2>Estampas</h2>
-        </div>
-        <div class="producto-4">
-            <img src="../img/baners.jpg" alt="baner">
-            <h2>Baners</h2>
-        </div>
-        <div class="producto-5">
-            <img src="../img/tarjetas personales.jpg" alt="tarjetas personales">
-            <h2>Tarjetas personales</h2>
-        </div>
-    </div>
+    </main>
     <footer>
         <h2>Easyprint</h2>
         <div class="pie">
@@ -92,4 +107,5 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -4,6 +4,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-image: url("../img/fondo-pagina.jpg"); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que se mantenga en su lugar al hacer scroll */
+}
+section {
+    background: none;
+}
 /*Index_cabecera */
 .cabecera {
     position: relative;
@@ -22,8 +31,11 @@
 }
 
 .dropdown-menu {
-    position: initial !important; 
+    position: initial !important;
 }
+
+
+
 /*Header_presentación */
 .presentación {
     background-color: #f0f0f0;
@@ -35,11 +47,69 @@
     font-size: 24px;
 }
 
+.presentación h1 {
+    font-family: Helvetica;
+}
+
 /* section */
 section {
     text-decoration: none;
     background-color: #f0f0f0;
 }
+
+
+/* Estilos para el contenedor de enlaces */
+.enlaces {
+    display: block;
+    /* Utilizamos flexbox para alinear los divs en una fila */
+    justify-content: space-between;
+    /* Espacio entre los elementos */
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    padding: 20px;
+    /* Espacio interno del contenedor */
+    background-color: #f5f5f5;
+    /* Color de fondo del contenedor */
+    border: 1px solid #ccc;
+    /* Borde del contenedor */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+.enlaces-bajo {
+    display: flex;
+}
+
+/* Estilos para los divs que contienen los enlaces */
+.enlaces div {
+    flex: 1;
+    /* Cada div ocupa el 25% del ancho del contenedor con espacio entre ellos */
+    padding: 10px;
+    /* Espacio interno de cada div */
+    border: 1px solid #ccc;
+    /* Borde de cada div */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+/* Estilos para los enlaces */
+.enlaces a {
+    text-decoration: none;
+    /* Quita la decoración de los enlaces */
+    color: #333;
+    /* Color del texto */
+    font-weight: bold;
+    /* Texto en negrita */
+    display: block;
+    /* Hace que los enlaces ocupen todo el ancho del div */
+    padding: 5px 0;
+    /* Espacio interno vertical de los enlaces */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+
 
 .contenedor-superior {
     width: 100%;
@@ -47,8 +117,7 @@ section {
     justify-content: space-between;
     width: 100%;
     margin: 0%;
-    background-color: #ffffff;
-}
+    background: none;}
 
 .contenedor-inferior {
     width: 100%;
@@ -56,8 +125,15 @@ section {
     justify-content: space-between;
     width: 100%;
     margin: 0%;
-    background-color: #ffffff;
+    background: none;
 
+}
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .productos {
@@ -67,7 +143,11 @@ section {
     overflow: hidden;
     border: 2px solid;
     text-align: center;
+    transition: transform 0.3s ease;
 }
+.productos:hover {
+    animation: swing 3s ease infinite;
+}    
 
 section img {
     height: 92%;
@@ -78,7 +158,7 @@ section img {
 .productos p {
     box-shadow: 0px 0px 300px -26px rgba(0, 0, 0, 0.64);
     background-color: #f0f0f0;
-    margin: 0;
+    margin: -7px;
 }
 
 /*footer */
@@ -91,9 +171,10 @@ footer {
 }
 
 .nombre {
-        color: #ffffff;
-        margin-top: -138px; 
+    color: #ffffff;
+    margin-top: -138px;
 }
+
 .pie {
     display: flex;
     align-items: center;
@@ -111,19 +192,56 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        box-shadow: none;
     }
 
     .productos {
-        width: 54%;
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        background-color: #2596be;
+        height: auto;
+        /* La altura se ajustará automáticamente al contenido */
+        text-align: center;
+        /* Centra el contenido horizontalmente */
+        overflow: hidden;
+    }
+
+    /* Estilos para los elementos dentro del footer */
+    .nombre {
+        color: #ffffff;
+        margin-bottom: 9px;
+        margin-top: -26px;
+    }
+
+    .redes {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    /* Estilo específico para el mapa */
+    .mapa {
+        width: 100%;
+        max-width: 100%;
+        /* Asegura que el mapa no se desborde */
+        height: auto;
+        /* La altura se ajustará automáticamente al contenido */
     }
 }
 
-/* productos */
+
+/* Trabajos */
+
 .grid-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 200px;
-    background-color: #fff;
 }
 
 .grid-imagen {
@@ -131,12 +249,20 @@ footer {
     border: 1px solid #000000;
     text-align: center;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
+    border-radius: 80px;
+    
+
+}
+
+.section-trabajo{
+    background: none;
 }
 
 .grid-imagen img {
     max-width: 100%;
     height: auto;
+    border-radius: 80px;
 }
 
 .grid-container .texto-principal {
@@ -145,17 +271,18 @@ footer {
     background-color: #ffffff;
     padding: 40px;
     border: 1px solid #000000;
-
-
+    border-radius: 80px;
 
 }
 
 .grid-imagen p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-/* productos: responsive */
+
+
+/* trabajos: responsive */
 
 @media (max-width: 1246px) {
     .grid-container {
@@ -165,42 +292,101 @@ footer {
         text-align: center;
     }
 }
+/* productos */
+
+.principal {
+    text-align: center;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.servicios {
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+}
+
+.servicios img {
+    width: 400px;
+    height: 350px;
+    margin: auto;
+}
+.servicios h2, p {
+    font-family: Arial;
+    text-align: center;
+}
+.imagen-grid a {
+    display: flex;
+    align-items: center;
+}
+
+/* productos: responsive */
+@media (max-width: 1348px) {
+    .grid-servicios {
+        display: block;
+        align-items: center;
+    }
+    .servicios img {
+        overflow: hidden;
+    }
+
+}
+/* envios */
+section h1 {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+
+}
+
+.envios {
+    background-color: white;
+    height: 582px;
+}
+
+section p {
+    font-family: Helvetica;
+}
 
 /* contactos */
-.contenedor {
+/* Estilos para el contenedor principal */
+.información {
     display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-    }
+    justify-content: space-between;
+    background: white;
+}
+
 .datos {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
-
-.consulta h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-}
-
-.consulta form {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0;
 }
 
-.consulta .form-group {
+/* Estilos para el encabezado h1 */
+.consulta h1 {
+    color: #333;
+    font-size: 24px;
     margin-bottom: 20px;
+}
+
+/* Estilos para los elementos de formulario */
+.form-group {
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input[type="text"],
@@ -210,28 +396,58 @@ textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
+/* Estilo para el botón de enviar */
 button[type="submit"] {
     background-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
     cursor: pointer;
-    font-weight: bold;
 }
 
+/* Estilo para el botón al pasar el ratón por encima */
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.atención {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
+/* Estilos para el contenedor de horarios */
+.horarios {
+    background-color: #f5f5f5;
     padding: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    height: 278px;
+    /* Ajusta el ancho máximo según tus necesidades */
+
+    /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para los párrafos dentro del contenedor */
+.horarios p {
+    margin: 10px 0;
+    /* Agrega espacio entre los párrafos */
+    font-size: 16px;
+    color: #333;
+    font-style: italic;
+}
+
+.horarios p:nth-child(odd) {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Responsive de contactos*/
+
+@media (max-width: 983px) {
+    .información {
+        display: block;
+        align-items: center;
+    }
 }
