@@ -1,0 +1,37 @@
+
+.section-trabajo {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 200px;
+
+        .texto-principal {
+            text-align: center;
+            text-align: justify;
+            background-color: #ffffff;
+            padding: 40px;
+            border: 1px solid #000000;
+            border-radius: 80px;
+        }
+
+        .grid-imagen {
+            max-width: 300px;
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 80px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 80px;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+}

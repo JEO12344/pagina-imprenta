@@ -1,0 +1,42 @@
+div {
+    .principal {
+        text-align: center;
+
+        h1 {}
+    }
+
+    .grid-servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .servicios {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+
+            .imagen-grid {
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+
+                img {
+                    width: 400px;
+                    height: 350px;
+                    margin: auto;
+                }
+            }
+        }
+
+        h2 {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        p {
+            font-family: Arial;
+            text-align: center;
+        }
+    }
+}

@@ -5,14 +5,18 @@
 }
 
 body {
-    background-image: url("../img/fondo-pagina.jpg"); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo para que se mantenga en su lugar al hacer scroll */
+    background-image: url("../img/fondo-pagina.jpg");
+    /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo para que se mantenga en su lugar al hacer scroll */
 }
-section {
-    background: none;
-}
+
+
+
 /*Index_cabecera */
 .cabecera {
     position: relative;
@@ -38,24 +42,36 @@ section {
 
 /*Header_presentación */
 .presentación {
-    background-color: #f0f0f0;
     text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 300px -26px rgba(0, 0, 0, 0.64);
-    font-size: 24px;
+    justify-content: center;
+    min-height: 200px;
+    background-color: #2596be;
+    padding: 25px;
+}
+
+.contenido {
+    max-width: 800px;
+    padding: 20px;
 }
 
 .presentación h1 {
     font-family: Helvetica;
+    margin-top: 0;
+    /* Elimina el margen superior predeterminado del h1 */
+    background-color: #2596be;
+    color: white;
+}
+
+.presentación p {
+    text-align: justify;
+    color: white;
 }
 
 /* section */
-section {
-    text-decoration: none;
-    background-color: #f0f0f0;
-}
+
 
 
 /* Estilos para el contenedor de enlaces */
@@ -77,36 +93,22 @@ section {
     /* Bordes redondeados */
 }
 
-.enlaces-bajo {
-    display: flex;
-}
-
 /* Estilos para los divs que contienen los enlaces */
 .enlaces div {
     flex: 1;
-    /* Cada div ocupa el 25% del ancho del contenedor con espacio entre ellos */
     padding: 10px;
-    /* Espacio interno de cada div */
     border: 1px solid #ccc;
-    /* Borde de cada div */
     border-radius: 5px;
-    /* Bordes redondeados */
 }
 
 /* Estilos para los enlaces */
 .enlaces a {
     text-decoration: none;
-    /* Quita la decoración de los enlaces */
     color: #333;
-    /* Color del texto */
     font-weight: bold;
-    /* Texto en negrita */
     display: block;
-    /* Hace que los enlaces ocupen todo el ancho del div */
     padding: 5px 0;
-    /* Espacio interno vertical de los enlaces */
     text-align: center;
-    /* Centra el texto horizontalmente */
 }
 
 
@@ -117,7 +119,8 @@ section {
     justify-content: space-between;
     width: 100%;
     margin: 0%;
-    background: none;}
+    background: none;
+}
 
 .contenedor-inferior {
     width: 100%;
@@ -128,12 +131,27 @@ section {
     background: none;
 
 }
+
 @keyframes swing {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(10deg); }
-    50% { transform: rotate(-10deg); }
-    75% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .productos {
@@ -145,9 +163,10 @@ section {
     text-align: center;
     transition: transform 0.3s ease;
 }
+
 .productos:hover {
     animation: swing 3s ease infinite;
-}    
+}
 
 section img {
     height: 92%;
@@ -206,13 +225,10 @@ footer {
         padding: 30px 0;
         background-color: #2596be;
         height: auto;
-        /* La altura se ajustará automáticamente al contenido */
         text-align: center;
-        /* Centra el contenido horizontalmente */
         overflow: hidden;
     }
 
-    /* Estilos para los elementos dentro del footer */
     .nombre {
         color: #ffffff;
         margin-bottom: 9px;
@@ -225,13 +241,10 @@ footer {
         margin-top: 10px;
     }
 
-    /* Estilo específico para el mapa */
     .mapa {
         width: 100%;
         max-width: 100%;
-        /* Asegura que el mapa no se desborde */
         height: auto;
-        /* La altura se ajustará automáticamente al contenido */
     }
 }
 
@@ -251,13 +264,10 @@ footer {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 80px;
-    
+
 
 }
 
-.section-trabajo{
-    background: none;
-}
 
 .grid-imagen img {
     max-width: 100%;
@@ -292,6 +302,7 @@ footer {
         text-align: center;
     }
 }
+
 /* productos */
 
 .principal {
@@ -304,10 +315,10 @@ footer {
 }
 
 .servicios {
-    background-color: #fff; /* Fondo blanco */
-    border: 1px solid #ccc; /* Borde gris */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .servicios img {
@@ -315,10 +326,13 @@ footer {
     height: 350px;
     margin: auto;
 }
-.servicios h2, p {
+
+.servicios h2,
+p {
     font-family: Arial;
     text-align: center;
 }
+
 .imagen-grid a {
     display: flex;
     align-items: center;
@@ -330,11 +344,13 @@ footer {
         display: block;
         align-items: center;
     }
+
     .servicios img {
         overflow: hidden;
     }
 
 }
+
 /* envios */
 section h1 {
     text-align: center;
@@ -353,6 +369,12 @@ section h1 {
 
 section p {
     font-family: Helvetica;
+}
+
+@media (max-width: 535px) {
+    .envios {
+        height: 674px;
+    }
 }
 
 /* contactos */
@@ -400,7 +422,6 @@ textarea {
     font-size: 16px;
 }
 
-/* Estilo para el botón de enviar */
 button[type="submit"] {
     background-color: #007bff;
     color: #fff;

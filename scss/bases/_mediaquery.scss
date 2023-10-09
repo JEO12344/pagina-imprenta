@@ -1,0 +1,78 @@
+@media (max-width: 1065px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .productos {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        background-color: #2596be;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .nombre {
+        color: #ffffff;
+        margin-bottom: 9px;
+        margin-top: -26px;
+    }
+
+    .redes {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .mapa {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* trabajos: responsive */
+@media (max-width: 1246px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* productos: responsive */
+@media (max-width: 1348px) {
+    .grid-servicios {
+        display: block;
+        align-items: center;
+    }
+
+    .servicios img {
+        overflow: hidden;
+    }
+}
+
+/* envios: responsive */
+@media (max-width: 535px) {
+    .envios {
+        height: 674px;
+    }
+}
+
+/* Responsive de contactos*/
+@media (max-width: 983px) {
+    .información {
+        display: block;
+        align-items: center;
+    }
+}
