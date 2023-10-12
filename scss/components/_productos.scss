@@ -1,6 +1,6 @@
 section {
     h1 {
-        @extend .titulo-principal;
+        @include titulo (center, 100%, 10px, 1px solid #ccc, 3px, #f0f0f0)
     }
     .grid-servicios {
         display: grid;

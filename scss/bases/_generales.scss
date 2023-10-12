@@ -34,3 +34,13 @@ body {
 $color-principal: #2596be;
 $color-secundario: white;
 $color-terciario: #ccc;
+
+
+@mixin titulo ($text, $width, $padding, $border, $border-radius, $background-color){
+text-align: $text;
+width: $width;
+padding: $padding;
+border: $border;
+border-radius: $border-radius;
+background-color: $background-color;
+}

@@ -191,7 +191,7 @@ footer {
           width: 50px;
           height: 30px; }
 
-.section-trabajo .titulo-principal, .section-trabajo section h1, section .section-trabajo h1, .section-trabajo .envios h1, .envios .section-trabajo h1 {
+.section-trabajo .titulo-principal {
   text-align: center;
   width: 100%;
   padding: 10px;
@@ -225,6 +225,14 @@ footer {
       margin-top: 10px;
       font-size: 20px; }
 
+section h1 {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f0f0f0; }
+
 section .grid-servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
@@ -250,6 +258,13 @@ section .grid-servicios {
 
 .envios {
   background-color: white; }
+  .envios h1 {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f0f0f0; }
   .envios h2,
   .envios p {
     font-family: Helvetica; }
