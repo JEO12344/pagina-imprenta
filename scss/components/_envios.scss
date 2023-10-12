@@ -1,21 +1,40 @@
 .envios {
     background-color: white;
-    height: 582px;
 
     h1 {
-        text-align: center;
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        background-color: #f0f0f0;
+        @extend .titulo-principal;
     }
 
-    h2 {
-        font-family: Helvetica;
-    }
-
+    h2,
     p {
         font-family: Helvetica;
+    }
+
+    .formulario {
+        form {
+            background-color:  #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 3px;
+            padding: 20px;
+            width: 100%;
+            position: initial;
+
+            div {
+                margin-bottom: 1px;
+
+                label {
+                    display: block;
+                    font-weight: bold;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }

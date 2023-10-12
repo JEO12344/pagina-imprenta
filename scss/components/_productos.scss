@@ -1,10 +1,7 @@
-div {
-    .principal {
-        text-align: center;
-
-        h1 {}
+section {
+    h1 {
+        @extend .titulo-principal;
     }
-
     .grid-servicios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -19,6 +16,7 @@ div {
                 a {
                     display: flex;
                     align-items: center;
+                    background-color: rgb(0, 0, 0);
                 }
 
                 img {
@@ -27,16 +25,17 @@ div {
                     margin: auto;
                 }
             }
-        }
 
-        h2 {
-            font-family: Arial;
-            text-align: center;
-        }
-
+            a {
+                h2 {
+                    font-family: Arial;
+                    text-align: center;
+                }
+            }
         p {
             font-family: Arial;
             text-align: center;
         }
+    }
     }
 }
