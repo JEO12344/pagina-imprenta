@@ -42,7 +42,7 @@
 
 /* trabajos: responsive */
 @media (max-width: 1246px) {
-    .grid-container {
+    .section-trabajo .grid-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -51,21 +51,27 @@
 }
 
 /* productos: responsive */
-@media (max-width: 1348px) {
-    .grid-servicios {
+@media (max-width: 1456px) {
+    section .grid-servicios {
         display: block;
         align-items: center;
+        width: 100%;
+    }
+
+    .servicios {
+        padding: 0px;
     }
 
     .servicios img {
         overflow: hidden;
+        width: 100%;
     }
 }
 
 /* envios: responsive */
 @media (max-width: 535px) {
     .envios {
-        height: 674px;
+        height: 1059px;
     }
 }
 

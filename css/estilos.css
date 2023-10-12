@@ -228,10 +228,11 @@ footer {
 section h1 {
   text-align: center;
   width: 100%;
-  padding: 10px;
+  padding: 0px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+  margin-bottom: 0; }
 
 section .grid-servicios {
   display: grid;
@@ -243,21 +244,24 @@ section .grid-servicios {
     padding: 20px; }
     section .grid-servicios .servicios .imagen-grid a {
       display: flex;
-      align-items: center;
-      background-color: black; }
+      align-items: center; }
     section .grid-servicios .servicios .imagen-grid img {
       width: 400px;
       height: 350px;
       margin: auto; }
-    section .grid-servicios .servicios a h2 {
-      font-family: Arial;
-      text-align: center; }
+    section .grid-servicios .servicios a {
+      color: black;
+      text-decoration: none; }
+      section .grid-servicios .servicios a h2 {
+        font-family: Arial;
+        text-align: center; }
     section .grid-servicios .servicios p {
       font-family: Arial;
       text-align: center; }
 
 .envios {
-  background-color: white; }
+  background-color: white;
+  height: 100%; }
   .envios h1 {
     text-align: center;
     width: 100%;
@@ -358,24 +362,28 @@ section .grid-servicios {
 
 /* trabajos: responsive */
 @media (max-width: 1246px) {
-  .grid-container {
+  .section-trabajo .grid-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; } }
 
 /* productos: responsive */
-@media (max-width: 1348px) {
-  .grid-servicios {
+@media (max-width: 1456px) {
+  section .grid-servicios {
     display: block;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
+  .servicios {
+    padding: 0px; }
   .servicios img {
-    overflow: hidden; } }
+    overflow: hidden;
+    width: 100%; } }
 
 /* envios: responsive */
 @media (max-width: 535px) {
   .envios {
-    height: 674px; } }
+    height: 1059px; } }
 
 /* Responsive de contactos*/
 @media (max-width: 983px) {

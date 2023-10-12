@@ -1,7 +1,8 @@
 section {
     h1 {
-        @include titulo (center, 100%, 10px, 1px solid #ccc, 3px, #f0f0f0)
+        @include titulo (center, 100%, 0px, 1px solid #ccc, 3px, #f0f0f0); margin-bottom: 0;
     }
+
     .grid-servicios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -16,7 +17,6 @@ section {
                 a {
                     display: flex;
                     align-items: center;
-                    background-color: rgb(0, 0, 0);
                 }
 
                 img {
@@ -27,15 +27,18 @@ section {
             }
 
             a {
+                color: black;
+                text-decoration: none;
                 h2 {
                     font-family: Arial;
                     text-align: center;
                 }
             }
-        p {
-            font-family: Arial;
-            text-align: center;
+
+            p {
+                font-family: Arial;
+                text-align: center;
+            }
         }
-    }
     }
 }
