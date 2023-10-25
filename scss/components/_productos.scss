@@ -12,6 +12,7 @@ h1 {
       border: 1px solid #ccc;
       border-radius: 5px;
       padding: 20px;
+      text-align: center;
   
       img {
         width: 400px;
@@ -26,8 +27,9 @@ h1 {
       }
   
       p {
-        font-family: Arial;
+        font-family: 'Times New Roman';
         text-align: justify;
+        padding: 26px;
       }
 
       a {
