@@ -91,6 +91,14 @@ footer {
   .Copyright p {
     margin: 0px; }
 
+.boton, .envios .formulario .boton, .contactos .datos form .boton {
+  background-color: #0074d9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+
 .presentación {
   text-align: center;
   display: flex;
@@ -342,13 +350,6 @@ h1 {
           border: 1px solid #ccc;
           border-radius: 5px;
           font-size: 16px; }
-    .envios .formulario .boton {
-      background-color: #0074d9;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer; }
 
 .contactos {
   display: flex;
@@ -383,13 +384,6 @@ h1 {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 3px; }
-      .contactos .datos form .boton {
-        background-color: #0074d9;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer; }
   .contactos .horarios {
     background-color: #f5f5f5;
     padding: 20px;
